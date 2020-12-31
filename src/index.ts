@@ -17,5 +17,8 @@ web.start();
 configProxy.start();
 chatProxy.start();
 
+chatProxy.use('in', buffer => console.log('[IN]', buffer.toString()));
+chatProxy.use('out', buffer => console.log('[OUT]', buffer.toString()));
+
 chatProxy.use('in', (buffer) => web.send('[IN] ' + buffer.toString()));
 chatProxy.use('out', (buffer) => web.send('[OUT] ' + buffer.toString()));
