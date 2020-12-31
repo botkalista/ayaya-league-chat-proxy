@@ -16,8 +16,8 @@ import ChatProxy from './components/ChatProxy';
 import ConfigProxy from './components/ConfigProxy';
 
 const info = {
-   config_port:  6041,
-   chat_port:  6042,
+   config_port: 6041,
+   chat_port: 6042,
 }
 
 const chatProxy = new ChatProxy(info.chat_port);
