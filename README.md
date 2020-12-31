@@ -1,5 +1,5 @@
 # ayaya-league-chat-proxy
-Proxy for League of Legends xmpp comunication.
+Proxy for League of Legends xmpp communication.
 
 ## Quick Start
 
