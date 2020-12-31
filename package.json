@@ -1,0 +1,23 @@
+{
+  "name": "ayaya-league-chat-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "league": "node src/utils/start_league.js 6041"
+  },
+  "keywords": [],
+  "author": "Emily",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.16",
+    "@types/ws": "^7.4.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "ws": "^7.4.1"
+  }
+}
