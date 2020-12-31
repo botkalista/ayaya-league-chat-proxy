@@ -1,8 +1,15 @@
 # ayaya-league-chat-proxy
 Proxy for League of Legends xmpp comunication.
 
+## Quick Start
 
-#Example
+```sh
+npm install
+npm start
+npm run league
+```
+
+## Example code
 
 ```typescript
 import ChatProxy from './components/ChatProxy';
@@ -23,3 +30,4 @@ chatProxy.use('in', buffer => console.log('[IN]',buffer.toString());
 chatProxy.use('out', buffer => console.log('[OUT]',buffer.toString());
 
 ```
+
