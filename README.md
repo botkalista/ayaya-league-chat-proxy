@@ -26,8 +26,8 @@ const configProxy = new ConfigProxy(info.config_port, info.chat_port);
 configProxy.start();
 chatProxy.start();
 
-chatProxy.use('in', buffer => console.log('[IN]',buffer.toString());
-chatProxy.use('out', buffer => console.log('[OUT]',buffer.toString());
+chatProxy.use('in', buffer => console.log('[IN]', buffer.toString()));
+chatProxy.use('out', buffer => console.log('[OUT]', buffer.toString()));
 
 ```
 
