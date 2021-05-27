@@ -46,7 +46,7 @@ export default class ConfigProxy {
         const proxyResponse = await fetch(url, reqInit);
         const proxyResponseJson = await proxyResponse.json();
 
-        fs.appendFileSync('logs/config_logs.txt', JSON.stringify({ url: req.originalUrl, data: proxyResponseJson }, null, 3));
+        //fs.appendFileSync('logs/config_logs.txt', JSON.stringify({ url: req.originalUrl, data: proxyResponseJson }, null, 3));
 
         if (proxyResponseJson.hasOwnProperty('chat.host')) proxyResponseJson['chat.host'] = '127.0.0.1';
         if (proxyResponseJson.hasOwnProperty('chat.port')) proxyResponseJson['chat.port'] = this.chatPort;
